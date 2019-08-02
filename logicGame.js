@@ -37,10 +37,10 @@ class Juego {
     }
 
     toggleBtnEmpezar(){
-        if( btnEmpezar.classList.contains('hide') ){
-            btnEmpezar.classList.remove('hide')
+        if( btnEmpezar.classList.contains('on') ){
+            btnEmpezar.classList.remove('on')
         }else{
-            btnEmpezar.classList.add('hide')
+            btnEmpezar.classList.add('on')
         }
     }
 

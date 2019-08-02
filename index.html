@@ -7,11 +7,16 @@
   </head>
   <body>
     <div class="gameboard">
-      <div id="celeste" class="color celeste left" data-color="celeste"></div>
-      <div id="violeta" class="color violeta right" data-color="violeta"></div>
-      <div id="naranja" class="color naranja left" data-color="naranja"></div>
-      <div id="verde" class="color verde right" data-color="verde"></div>
-      <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+
+      <div id="celeste" class="box celeste left-top" data-color="celeste"></div>      
+      <div id="violeta" class="box violeta right-top" data-color="violeta"></div>    
+      <div class="circle"></div>
+      <div class="circle-button"></div>
+      <div id="btnEmpezar" class="circle-start" onclick="empezarJuego()"><p>Start</p></div>
+      <div id="naranja" class="box naranja left-bottom" data-color="naranja"></div>      
+      <div id="verde" class="box verde right-bottom" data-color="verde"></div>      
+      
+      <!-- <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button> -->
     </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="logicGame.js"></script>

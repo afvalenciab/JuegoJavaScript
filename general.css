@@ -5,69 +5,139 @@
 }
 
 body {
-    margin: 0;
-    background: #dedede;
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    margin: 0;    
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
   }
 
   .gameboard {
-    height: 100vh;
-    width: 100vh;
+    border: 20px solid black;
+    display: flex;
+    width: 420px;
+    height: 420px;
+    flex-wrap: wrap;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto;
-    max-height: 60vh;
-    max-width: 60vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 10px rgb(43, 42, 42);
   }
 
-  .color {
-    width: 50%;
-    height: 50%;
-    display: inline-block;
+  .box{
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px; 
+    display: flex;
+    box-shadow: inset 0px 0px 10px 10px transparent;
   }
 
-  .left {
-    float: left;
+  .circle{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    background: black;
   }
 
-  .right {
-    float: left;
+  .circle-button{
+    border: 1px solid #242424;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background: #242424;
   }
 
-  .celeste {
-    background: #22a6b3;
+  .circle-start{
+    border: 8px solid green;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    box-shadow:  0px 0px 12px 3px gray;
+  }
+
+  .circle-start.on{
+    box-shadow:  0px 0px 12px 3px green;
+  }
+  
+  .circle-start p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;    
+  }
+
+  .celeste { 
+    background: #112f91;
   }
 
   .celeste.light {
-    background: #7ed6df;
+    background: #1b7fbd;
+
   }
 
   .violeta {
-    background: #be2edd;
+    background: #af0404;
   }
 
   .violeta.light {
-    background: #e056fd;
+    background: #ff0000;
   }
 
   .naranja {
-    background: #f0932b;
+    background: #fcd307;
   }
 
   .naranja.light {
-    background: #ffbe76;
+    background: #fffb81;
   }
 
   .verde {
-    background: #6ab04c;
+    background: green;
   }
 
   .verde.light {
-    background: #badc58;
+    background: #00FF00;    
   }
 
+  .left-top{
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    box-shadow: inset 0px 0px 10px 10px transparent;
+  }
+  
+  .left-bottom{
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+  }
+  
+  .right-top{
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+  }
+  
+  .right-bottom{
+    border-top: 10px solid black;
+    border-left: 10px solid black;
+  }
+  
   .btn-start {
     width: 400px;
     height: 100px;
@@ -82,3 +152,8 @@ body {
   .hide {
     display: none;
   }
+
+
+
+
+
