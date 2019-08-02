@@ -1,11 +1,7 @@
 
-
-* {
-  font-family: 'Arial';
-}
-
 body {
-  background:
+  font-family: 'Tangerine', cursive;  
+   background:
     linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
     linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
     linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
@@ -13,16 +9,22 @@ body {
     linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
     linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
     background-color: #131313;
-    background-size: 20px 20px;
-    margin: 0;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-size: 20px 20px;  
+    display: block; 
     height: 100vh;
+  }
+
+  h1{
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 80px;
+    color: #Fafafa;
+
   }
 
   .gameboard {
     border: 20px solid black;
+    margin: 0 auto;
     display: flex;
     width: 420px;
     height: 420px;
@@ -77,11 +79,9 @@ body {
     box-shadow:  0px 0px 12px 3px green;
   }
   
-  .circle-start p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    color: white;
-    text-transform: uppercase;    
+  .circle-start p{    
+    font-size: 40px;
+    color: white;        
   }
 
   .celeste { 
@@ -138,20 +138,6 @@ body {
     border-left: 10px solid black;
   }
   
-  .btn-start {
-    width: 400px;
-    height: 100px;
-    background: #ecf0f1;
-    color: #2c3e50;
-    font-size: 2.5rem;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
-  }
-
-  .hide {
-    display: none;
-  }
 
 
 
